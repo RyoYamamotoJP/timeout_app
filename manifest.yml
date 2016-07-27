@@ -1,0 +1,5 @@
+applications:
+- name: timeout_app
+  command: bundle exec rake db:migrate && bundle exec rails s --port=$PORT
+  services:
+  - postgresql
